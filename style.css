@@ -1,0 +1,58 @@
+ div:first-child {
+     /* Modifica la imagen */
+            display: flex;
+            background-image: url("persona.jpg");
+            background-size: cover;
+            justify-content: center;
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            background-color: white(0, 0, 0);
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(63,94,251);
+            box-shadow: 5px 10px 0px 2px rgb(117, 113, 113);
+            transform: translate(30, 20);
+        }
+        
+        p{
+            margin-right: 5%;
+            margin-left: 5%;
+            justify-content: center;
+            background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+        }
+
+    
+        div:first-child:hover {
+            padding: 50px;
+            width: 75%;
+        }
+    
+        div:first-child:active {
+            padding: 20px;
+            width: 100%;
+        }
+
+        
+        
+        p::first-letter {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        /* Genera dos columnas dentro del p al pasar el cursor por encima */
+        p:hover {
+            column-count: 2;
+            column-width: 50%;
+        }
+        /*Cuando se hace click pasa de 2 a 3 columnas*/
+        p:active {
+            column-count: 3;
+        }
+        /*Cambia el estilo del ultimo parrafo*/
+        p:last-of-type {
+            color: rgb(0, 0, 0);
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
